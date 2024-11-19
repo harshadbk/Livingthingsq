@@ -1,0 +1,84 @@
+/* Container for the shop category section */
+.shopcategory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Gap between elements */
+    padding: 20px; /* Padding for spacing */
+}
+
+/* Banner image styling */
+.shopcategory-banner {
+    width: 82%;
+    display: block;
+    margin: 0px 170px;
+    height: auto;
+    border-radius: 10px; /* Rounded corners */
+    object-fit: cover; /* Cover the container */
+}
+
+/* Index and sort container */
+.shopcategory-indexSort {
+    display: flex;
+    justify-content: space-between; /* Space between elements */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Max width for container */
+    padding: 10px 20px; /* Padding for spacing */
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Index text styling */
+.shopcategory-indexSort p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Font size */
+    color: #333; /* Text color */
+}
+
+/* Sort container */
+.shopcategory-sort {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Gap between text and icon */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.shopcategory-sort:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Sort icon styling */
+.shopcategory-sort img {
+    width: 20px; /* Fixed width for icon */
+    height: auto;
+}
+
+/* Products container */
+.shopcategory-products {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Gap between products */
+    width: 100%;
+    max-width: 1200px; /* Max width for container */
+    margin-top: 20px; /* Margin from top */
+}
+
+/* Individual product card */
+.shopcategory-products .item-card {
+    width: 250px; /* Fixed width for items */
+    padding: 20px;
+    border: 1px solid #ccc; /* Border for separation */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    background-color: #fff; /* White background for contrast */
+}
+
+.shopcategory-products .item-card:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}

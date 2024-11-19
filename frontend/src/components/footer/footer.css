@@ -1,0 +1,99 @@
+/* Container for the footer section */
+.footer {
+    background-color:wheat ; /* Dark background color */
+    color: black; /* White text color */
+    padding: 40px 20px; /* Padding for the footer */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Gap between elements */
+}
+
+/* Footer logo container */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Gap between logo and text */
+}
+
+/* Footer logo image styling */
+.footer-logo img {
+    width: 50px; /* Fixed width for the logo */
+    height: auto;
+}
+
+/* Footer logo text styling */
+.footer-logo p {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove default margin */
+}
+
+/* Footer links list */
+.footer-links {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    gap: 20px; /* Gap between links */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+/* Individual footer link */
+.footer-links li {
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links li:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Footer social icons container */
+.footer-social-icons {
+    display: flex;
+    gap: 20px; /* Gap between icons */
+}
+
+/* Footer icon container */
+.footer-icon-container {
+    width: 40px; /* Fixed width for icons */
+    height: 40px; /* Fixed height for icons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #555; /* Background color for icon container */
+    border-radius: 50%; /* Rounded corners for circular effect */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-icon-container:hover {
+    background-color: #007bff; /* Change background color on hover */
+}
+
+/* Footer social icon image */
+.footer-icon-container img {
+    width: 20px; /* Fixed width for the icon image */
+    height: auto;
+}
+
+/* Footer copyright section */
+.footer-copyright {
+    width: 100%; /* Full width */
+    text-align: center; /* Center align text */
+}
+
+/* Horizontal line styling */
+.footer-copyright hr {
+    border: 0; /* Remove default border */
+    height: 1px; /* Fixed height */
+    background: #555; /* Background color for the line */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+/* Footer copyright text */
+.footer-copyright p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px;
+    color: #aaa; /* Light gray color for text */
+}

@@ -1,0 +1,80 @@
+/* Container for the newsletter section */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Gap between elements */
+    padding: 40px; /* Padding for better spacing */
+    background-color: pink; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Max width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Title styling */
+.newsletter h1 {
+    color: #333; /* Slightly lighter black for better readability */
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center; /* Center align the text */
+    margin-bottom: 10px; /* Margin for spacing */
+}
+
+/* Paragraph styling */
+.newsletter p {
+    color: #666; /* Gray color for text */
+    font-size: 16px;
+    text-align: center; /* Center align the text */
+    margin-bottom: 20px; /* Margin for spacing */
+}
+
+/* Input and button container */
+.newsletter div {
+    display: flex;
+    gap: 10px; /* Gap between input and button */
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    justify-content: center; /* Center items */
+    width: 100%; /* Full width */
+}
+
+/* Input field styling */
+.newsletter input[type="email"] {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Border for input field */
+    border-radius: 5px; /* Rounded corners */
+    flex: 1; /* Flex grow to fill available space */
+    max-width: 300px; /* Max width for the input */
+    box-sizing: border-box; /* Ensure padding and border are included in total width */
+}
+
+/* Button styling */
+.subscribe {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff; /* White text */
+    background-color: #007bff; /* Primary color for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.unsubscribe {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff; /* White text */
+    background-color: red; /* Primary color for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Button hover effect */
+.newsletter button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

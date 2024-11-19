@@ -1,0 +1,106 @@
+/* Container for the login/signup section */
+.loginsignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: pink; /* Light background color */
+    padding: 20px; /* Padding for spacing */
+}
+
+.loginsignup-fields input,
+.add-product-selector {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Container for the login/signup form */
+.loginsignup-container {
+    background-color: #fff; /* White background for contrast */
+    padding: 40px; /* Padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    max-width: 400px; /* Max width for container */
+    width: 100%; /* Full width */
+    text-align: center; /* Center align text */
+}
+
+/* Title styling */
+.loginsignup-container h1 {
+    margin-bottom: 20px; /* Margin for spacing */
+    color: #333; /* Dark text color */
+    font-size: 24px; /* Font size */
+    font-weight: 600; /* Font weight */
+}
+
+/* Fields container */
+.loginsignup-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Gap between fields */
+    margin-bottom: 20px; /* Margin for spacing */
+}
+
+/* Input field styling */
+.loginsignup-fields input {
+    padding: 10px; /* Padding for spacing */
+    font-size: 16px; /* Font size */
+    border: 1px solid #ccc; /* Border for input field */
+    border-radius: 5px; /* Rounded corners */
+    box-sizing: border-box; /* Ensure padding and border are included in total width */
+}
+
+/* Button styling */
+.loginsignup-container button {
+    padding: 10px 20px; /* Padding for spacing */
+    font-size: 16px; /* Font size */
+    font-weight: 600; /* Font weight */
+    color: #fff; /* White text */
+    background-color: #007bff; /* Primary color for button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.loginsignup-container button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Login link styling */
+.loginsignup-login {
+    margin-top: 20px; /* Margin for spacing */
+    color: #333; /* Dark text color */
+    font-size: 14px; /* Font size */
+}
+
+.loginsignup-login span {
+    color: #007bff; /* Primary color for link */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.loginsignup-login span:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+/* Agree container */
+.loginsignup-agree {
+    display: flex;
+    align-items: center;
+    margin-top: 20px; /* Margin for spacing */
+}
+
+.loginsignup-agree input[type="checkbox"] {
+    margin-right: 10px; /* Margin between checkbox and text */
+}
+
+.loginsignup-agree p {
+    margin: 0; /* Remove default margin */
+    font-size: 12px; /* Font size */
+    color: #777; /* Gray text color */
+}

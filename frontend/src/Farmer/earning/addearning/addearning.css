@@ -1,0 +1,45 @@
+.add-earning-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.add-earning-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.add-earning-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-earning-container input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-earning-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-earning-container button:hover {
+  background-color: #45a049;
+}
+
+.success-message {
+  color: green;
+  text-align: center;
+}

@@ -1,0 +1,32 @@
+.Rworkers-content-format-main {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .Rworkers-content-data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .Rworkers-content-item {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .Rworkers-content-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  

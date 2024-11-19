@@ -1,0 +1,54 @@
+.descriptionbox {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .descriptionbox-navigator {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .descriptionbox-navbox, .descriptionbox-navbox-fade {
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .descriptionbox-navbox {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .descriptionbox-navbox:hover {
+    background-color: #45a049;
+  }
+  
+  .descriptionbox-navbox-fade {
+    background-color: #ddd;
+    color: #333;
+    border-radius: 4px;
+  }
+  
+  .descriptionbox-navbox-fade:hover {
+    background-color: #ccc;
+  }
+  
+  .descriptionbox-description {
+    margin-top: 20px;
+  }
+  
+  .descriptionbox-description p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+  }

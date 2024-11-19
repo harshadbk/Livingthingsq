@@ -1,0 +1,69 @@
+/* Container for the earning section */
+.earning-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button container styling */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.button-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover effects */
+}
+
+/* Button hover effect */
+.button-container button:hover {
+  background-color: #45a049; /* Darker green */
+  transform: translateY(-2px); /* Slightly raise the button */
+}
+
+/* Component display styling */
+.component-display {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for appearance */
+}
+
+/* Additional styling for headings within components */
+.component-display h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333; /* Dark text */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  .earning-container {
+    padding: 15px;
+  }
+  
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    align-items: center;
+  }
+
+  .button-container button {
+    width: 100%; /* Full width buttons */
+  }
+}

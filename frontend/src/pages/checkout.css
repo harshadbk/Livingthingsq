@@ -1,0 +1,212 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.error {
+    font-size: medium;
+    background-color: red;
+}
+
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.checkout-header-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.checkout-header-left h1 {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+.checkout-details-left,
+.checkout-paymentInfo-left {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    animation: slideInFromLeft 0.5s ease-in-out;
+}
+
+.checkout-details-left form,
+.checkout-paymentInfo-left form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-details-left div,
+.checkout-paymentInfo-left div {
+    margin-bottom: 15px;
+}
+
+.checkout-details-left p,
+.checkout-paymentInfo-left p {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.checkout-details-left input,
+.checkout-paymentInfo-left input {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.checkout-details-left input:focus,
+.checkout-paymentInfo-left input:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+.checkout-paymentInfo-left .checkout-paymentoption-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-paymentoption-left input {
+    margin-right: 10px;
+}
+
+.checkout-amount-down {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: slideInFromRight 0.5s ease-in-out;
+}
+
+.checkout-amount-down h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.checkout-format-down {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.cartitems-format-down {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+}
+
+.cartitems-format-down:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carticon-product-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.cartitems-quantity-down {
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cartitems-quantity-down:hover {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.checkout-downside {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.total{
+    background-color: orchid;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}

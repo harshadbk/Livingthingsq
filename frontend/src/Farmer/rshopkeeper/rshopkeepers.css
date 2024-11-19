@@ -1,0 +1,106 @@
+.shopkeeper-content {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.5s ease-in-out;
+  }
+  
+  .shopkeeper-content-format {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    animation: slideIn 0.5s ease-in-out;
+  }
+  
+  .shopkeeper-content-data {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+  
+  .shopkeeper-content-item {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .shopkeeper-content-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  p {
+    margin: 0;
+    padding: 5px;
+    color: #555;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .shopkeeper-content-format,
+    .shopkeeper-content-item {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .shopkeeper-content-format,
+    .shopkeeper-content-item {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  

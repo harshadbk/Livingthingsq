@@ -1,0 +1,93 @@
+/* Container for the new collections section */
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Gap between elements */
+    padding: 20px; /* Padding for better spacing */
+    height: auto; /* Auto height to fit content */
+}
+
+/* Title styling */
+.new-collections h1 {
+    color: #333; /* Slightly lighter black for better readability */
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 10px; /* Margin for spacing */
+}
+
+/* Horizontal line styling */
+.new-collections hr {
+    width: 300px;
+    height: 10px;
+    border-radius: 15px;
+    background: #252525; /* Fixed background color */
+}
+
+/* Container for the collections items */
+.collections {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items for responsiveness */
+    justify-content: center; /* Center items */
+    gap: 30px; /* Gap between items */
+    margin-top: 50px; /* Margin from top */
+}
+
+/* Individual item card */
+.item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      width: 100px; /*Fixed width for items */
+    padding: 30px;
+    border: 1px solid #ccc; /* Border for separation */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    background-color: #fff; /* White background for contrast */
+}
+
+.item-card:hover {
+    transform: translateY(-10px); /* Lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Image styling */
+.item-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px; /* Margin below the image */
+}
+
+/* Product name styling */
+.item-card h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Price container */
+.item-card .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+/* New price styling */
+.item-card .price .new-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #e53935; /* Highlight new price in red */
+}
+
+/* Old price styling */
+.item-card .price .old-price {
+    font-size: 16px;
+    font-weight: 400;
+    color: #777;
+    text-decoration: line-through; /* Strikethrough for old price */
+}

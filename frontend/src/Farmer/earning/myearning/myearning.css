@@ -1,0 +1,24 @@
+.my-earning-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.my-earning-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.earning-list {
+  margin-top: 15px;
+}
+
+.earning-list p {
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin: 0;
+}

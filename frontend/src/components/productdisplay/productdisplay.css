@@ -1,0 +1,298 @@
+
+.productdisplay {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productdisplay-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* List of small images */
+.productdisplay-img-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Each small image */
+.productdisplay-img-list img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+    transition: transform 0.2s ease-in-out; /* Smooth scale on hover */
+}
+
+.productdisplay-img-list img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Main product image */
+.productdisplay-main-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out; /* Smooth scale on hover */
+}
+
+.productdisplay-main-img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Right section containing product details */
+.productdisplay-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Product title */
+.productdisplay-right h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    transition: color 0.2s; /* Smooth color change on hover */
+}
+
+.productdisplay-right h1:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Star rating section */
+.productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: transform 0.2s ease-in-out; /* Smooth scale on hover */
+}
+
+.productdisplay-right-star img {
+    width: 20px;
+    height: 20px;
+}
+
+.productdisplay-right-star img:hover {
+    transform: scale(1.2);
+}
+
+.productdisplay-right-star p {
+    margin: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.productdisplay-right-price-old {
+    font-size: 20px;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.productdisplay-right-price-new {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+
+.productdisplay-right-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+
+.productdisplay-right-size h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.productdisplay-right-size-options {
+    display: flex;
+    gap: 10px;
+}
+
+.productdisplay-right-size-options div {
+    padding: 12px 24px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s, transform 0.2s ease-in-out; /* Smooth transitions */
+}
+
+.productdisplay-right-size-options div:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    transform: scale(1.05); 
+}
+
+ 
+.productdisplay-right button {
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    margin-top: 20px;
+}
+
+.productdisplay-right button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+.productdisplay-right-category {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.productdisplay-right-category span {
+    font-weight: bold;
+    color: #333;
+}
+
+.productdisplay-right-shopkeeper {
+    margin-top: 20px;
+  }
+  
+  .productdisplay-right-shopkeeper button {
+    background-color: #4CAF50;
+    color: white;  
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 16px;
+  }
+  
+  .productdisplay-right-shopkeeper button:hover {
+    background-color: #45a049;
+  }
+  
+  .shopkeeper-details {
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .shopkeeper-details p {
+    margin: 5px 0;
+  }
+  
+  .shopkeeper-details p strong {
+    display: inline-block;
+    width: 150px;
+  }
+  
+  .shopkeeper-details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .shopkeeper-details table th,
+  .shopkeeper-details table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .shopkeeper-details table th {
+    background-color: #f2f2f2;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .buttonstyleai {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 128, 0, 0.4);
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    z-index: 0;
+  }
+  
+  .buttonstyleai:hover {
+    background-color: #218838; /* Darker green on hover */
+    box-shadow: 0 10px 20px rgba(0, 128, 0, 0.6); /* Bigger shadow on hover */
+    transform: scale(1.05);
+  }
+  
+  .buttonstyleai::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d6e34;
+    z-index: -1;
+    border-radius: 25px;
+    transition: all 0.4s ease;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+  }
+  
+  .buttonstyleai:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .buttonstyleai:focus {
+    outline: none;
+  }
+  
+  

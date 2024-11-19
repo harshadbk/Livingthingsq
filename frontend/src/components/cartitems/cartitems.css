@@ -1,0 +1,163 @@
+/* cartitems.css */
+
+.cartitems {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartitems-format-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.cartitems-format-main p {
+    text-align: center;
+}
+
+.cartitems-format {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.cartitems-format img {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cartitems-format p {
+    text-align: center;
+    margin: 0;
+}
+
+.cartitems-quantity {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: center;
+    cursor: default;
+}
+
+.cartitems-remove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.cartitems hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+/* styles.css */
+
+.cartitems-down {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cartitems-total {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.cartitems-total h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.cartitems-total-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.cartitems-total-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+.cartitems-total-item h3 {
+    font-size: 22px;
+    color: #333;
+}
+
+.cartitems-promocode {
+    flex: 1;
+    padding-left: 20px;
+    border-left: 1px solid #ccc;
+    margin-left: 20px;
+}
+
+.cartitems-promocode p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.cartiyems-promobox {
+    display: flex;
+    align-items: center;
+}
+
+.cartiyems-promobox input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.cartiyems-promobox button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cartiyems-promobox button:hover {
+    background-color: #45a049;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+hr {
+    border: 0.5px solid #ccc;
+    margin: 5px 0;
+}

@@ -1,0 +1,129 @@
+.faddproducts {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .addfproduct-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+    animation: fadeIn 1s ease;
+  }
+  
+  .addfproduct-itemfield {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+    animation: slideUp 0.5s ease-in-out;
+  }
+  
+  label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+    animation: fadeIn 1s ease;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus,
+  input[type="date"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: none;
+  }
+  
+  input[type="file"] {
+    display: none;
+  }
+  
+  .addproduct-thumbnail-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px dashed #007bff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .addproduct-thumbnail-img:hover {
+    border-color: #28a745;
+    transform: scale(1.05);
+  }
+  
+  button.addproduct-btn {
+    padding: 12px 25px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button.addproduct-btn:hover {
+    background-color: #218838;
+    transform: translateY(-3px);
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .addfproduct-itemfield {
+    margin-bottom: 15px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }  

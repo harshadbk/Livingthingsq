@@ -1,0 +1,75 @@
+.listuser-container {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.listuser-header,
+.listuser-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.listuser-header {
+    font-weight: bold;
+    background: #007BFF;
+    color: #fff;
+}
+
+.listuser-row {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.listuser-row:hover {
+    background: #f1f1f1;
+}
+
+.listuser-remove-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.listuser-remove-icon:hover {
+    transform: scale(1.2);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

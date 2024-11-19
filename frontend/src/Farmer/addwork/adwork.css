@@ -1,0 +1,58 @@
+.farming-work-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #f5f5f5;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.farming-work-form input, 
+.farming-work-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.farming-work-form input:focus, 
+.farming-work-form textarea:focus {
+    border-color: #66b2ff;
+    box-shadow: 0 0 8px rgba(102, 178, 255, 0.5);
+}
+
+.submit-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #218838;
+}
+
+.message {
+    margin-top: 20px;
+    color: #28a745;
+    font-size: 18px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

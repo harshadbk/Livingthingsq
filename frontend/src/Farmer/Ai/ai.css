@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .user-type-selector {
+    margin: 15px 0;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  select {
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .textarea-container {
+    margin: 15px 0;
+  }
+  
+  .question-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 14px;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  .generate-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .generate-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .answer-box {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    white-space: pre-wrap; /* Preserve whitespace */
+    word-wrap: break-word; /* Break long words */
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .example-questions {
+    margin-top: 20px;
+  }
+  
+  .example-questions h2 {
+    color: #555;
+  }
+  
+  .example-questions ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .example-questions li {
+    margin: 5px 0;
+  }
+  
+  .loader {
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-top: 4px solid #28a745;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
