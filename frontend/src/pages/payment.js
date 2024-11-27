@@ -1,11 +1,19 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import './payment.css';
 
 const Payment = () => {
+  const location = useLocation();
+  const subtotal = location.state?.subtotal || 0;
+
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
-  const [amount, setAmount] = useState("");
+  const [amount, setAmount] = useState(subtotal);
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setAmount(subtotal);
+  }, [subtotal]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -15,8 +23,8 @@ const Payment = () => {
       name,
       mobile,
       amount,
-      MUID: "MUIDW" + Date.now(),
-      transactionId: "T" + Date.now(),
+      MUID: `MUIDW${Date.now()}`,
+      transactionId: `T${Date.now()}`,
     };
 
     try {
@@ -51,7 +59,9 @@ const Payment = () => {
           <h2 className="text-4xl font-bold mb-6 text-[#6739B7]">Make a Payment</h2>
 
           <div className="mb-6">
-            <label htmlFor="Name" className="block text-sm font-medium leading-6 text-gray-900">Name</label>
+            <label htmlFor="Name" className="block text-sm font-medium leading-6 text-gray-900">
+              Name
+            </label>
             <div className="relative mt-2 rounded-md shadow-sm">
               <input
                 id="Name"
@@ -67,7 +77,9 @@ const Payment = () => {
           </div>
 
           <div className="mb-6">
-            <label htmlFor="Mobile" className="block text-sm font-medium leading-6 text-gray-900">Mobile</label>
+            <label htmlFor="Mobile" className="block text-sm font-medium leading-6 text-gray-900">
+              Mobile
+            </label>
             <div className="relative mt-2 rounded-md shadow-sm">
               <input
                 id="Mobile"
@@ -83,7 +95,9 @@ const Payment = () => {
           </div>
 
           <div className="mb-6">
-            <label htmlFor="Amount" className="block text-sm font-medium leading-6 text-gray-900">Amount</label>
+            <label htmlFor="Amount" className="block text-sm font-medium leading-6 text-gray-900">
+              Amount
+            </label>
             <div className="relative mt-2 rounded-md shadow-sm">
               <input
                 id="Amount"
@@ -96,7 +110,11 @@ const Payment = () => {
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset"
               />
               <div className="absolute inset-y-0 right-0 flex items-center">
-                <select id="currency" name="currency" className="h-full py-0 pl-2 text-gray-500 bg-transparent border-0 rounded-md pr-7 focus:ring-2">
+                <select
+                  id="currency"
+                  name="currency"
+                  className="h-full py-0 pl-2 text-gray-500 bg-transparent border-0 rounded-md pr-7 focus:ring-2"
+                >
                   <option>INR</option>
                   <option>CAD</option>
                   <option>EUR</option>
